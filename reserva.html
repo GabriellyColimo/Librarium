@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librarium</title>
+  <link rel="stylesheet" href="reserva.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">Librarium</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="index.html#catalogo">Catálogo</a></li>
+      <li><a href="reserva.html">Reservas</a></li>
+      <li><a href="usuario.html">User</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h1>Reservar ou Devolver Livros</h1>
+    <p>Gerencie suas reservas de maneira simples e rápida. Basta informar o <strong>ID do livro</strong> e a <strong>ação</strong> desejada.</p>
+
+    <form class="reservation-form">
+      <div class="form-group">
+        <label for="bookId"><i class="fas fa-book"></i> ID do Livro:</label>
+        <input type="text" id="bookId" name="bookId" placeholder="Ex: 12345" required>
+      </div>
+
+      <div class="form-group">
+        <label for="action"><i class="fas fa-exchange-alt"></i> Ação:</label>
+        <select id="action" name="action" required>
+          <option value="reservar">Reservar</option>
+          <option value="devolver">Devolver</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="submit-button"><i class="fas fa-check-circle"></i> Confirmar</button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Librarium. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.reservation-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const bookId = document.getElementById('bookId').value;
+      const action = document.getElementById('action').value;
+      alert(`Ação: ${action === 'reservar' ? 'Reserva' : 'Devolução'} para o livro ID ${bookId} confirmada.`);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+  }
+  
+  body {
+    background-color: #fdf8f4;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6e4b3a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 140px);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container h1 {
+    font-size: 2.5rem;
+    color: #3b2f2f;
+    margin-bottom: 20px; 
+  }
+    
+  .container p {
+    font-size: 1.1rem;
+    color: #6e6059;
+    margin-bottom: 30px;
+  }
+  
+  .reservation-form {
+    background-color: #f0e6e6;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3b2f2f;
+    font-size: 1.1rem;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6e4b3a;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button i {
+    margin-right: 5px;
+  }
+  
+  .submit-button:hover {
+    background-color: #5a3d30;
+  }
+  
+  .footer {
+    background-color: #6e4b3a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .footer-links li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

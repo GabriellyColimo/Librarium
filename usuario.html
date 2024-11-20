@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librarium</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Librarium</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#catalogo">Catálogo</a></li>
+        <li><a href="reserva.html">Reservas</a></li>
+        <li><a href="#">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container profile-container">
+    <br><h2>Perfil do Usuário</h2>
+
+    <section class="user-info">
+      <h3>Informações Pessoais</h3>
+      <p><strong>Nome:</strong> Erika Messias</p>
+      <p><strong>Email:</strong> erika@email.com</p>
+      <p><strong>Data de Cadastro:</strong> 15 de Janeiro de 2023</p>
+    </section>
+
+    <!-- Livros Emprestados -->
+    <section class="borrowed-books">
+      <h3>Livros Emprestados</h3>
+      <ul class="book-list">
+        <li>
+          <div class="book-item">
+            <img src="images/rainha_vermelha.jpg" alt="Rainha Vermelha">
+            <div>
+              <h4>Rainha Vermelha</h4>
+              <p><strong>Data de Empréstimo:</strong> 10 de Outubro de 2024</p>
+              <p><strong>Data de Devolução:</strong> 24 de Outubro de 2024</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="book-item">
+            <img src="images/biblioteca_meianoite.jpeg" alt="A Biblioteca da Meia-Noite">
+            <div>
+              <h4>A Biblioteca da Meia-Noite</h4>
+              <p><strong>Data de Empréstimo:</strong> 5 de Outubro de 2024</p>
+              <p><strong>Data de Devolução:</strong> 19 de Outubro de 2024</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="book-item">
+            <img src="images/principe_cruel.jpg" alt="O Príncipe Cruel">
+            <div>
+              <h4>O Príncipe Cruel</h4>
+              <p><strong>Data de Empréstimo:</strong> 2 de Setembro de 2024</p>
+              <p><strong>Status:</strong> Atrasado</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Librarium. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librarium</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Menu -->
+  <header class="navbar">
+    <div class="logo">Librarium</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Início</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+        <li><a href="usuario.html">User</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <div class="container">
+    <div class="content">
+      <h1>Librarium: Sua plataforma de reserva e devolução de livros</h1>
+      <p>Descubra uma ampla seleção de livros, reserve e devolva com facilidade na nossa plataforma Librarium.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#catalogo">Explorar Catálogo</a>
+        <a class="btn secondary" href="login.html">Fazer Reserva</a>
+      </div>
+    </div>
+    <div class="image">
+      <img src="images/home.jpg" alt="Interior de uma biblioteca aconchegante">
+    </div>
+  </div>
+
+  <section class="icon-section">
+    <div class="icon-box">
+      <img src="images/estrela.png" alt="Avaliações" class="icon">
+      <h3>Avaliações</h3>
+      <p>Leia opiniões de outros usuários e faça escolhas informadas.</p>
+    </div>
+    <div class="icon-box">
+      <img src="images/tempo.png" alt="Tempo" class="icon">
+      <h3>Tempo</h3>
+      <p>Reserve e devolva livros em minutos, sem complicações.</p>
+    </div>
+    <div class="icon-box">
+      <img src="images/ux.png" alt="Facilidade de Uso" class="icon">
+      <h3>Facilidade de Uso</h3>
+      <p>Interface amigável para uma experiência simples e rápida.</p>
+    </div>
+  </section>
+  
+  <h2 class="catalog-title">Catálogo</h2>
+  <section class="book-section" id="catalogo">
+    <div class="book-card available" data-summary="O mundo de Mare Barrow é dividido pelo sangue: vermelho ou prateado. Mare e sua família são vermelhos: plebeus, humildes, destinados a servir uma elite prateada cujos poderes sobrenaturais os tornam quase deuses. Mare rouba o que pode para ajudar sua família a sobreviver e não tem esperanças de escapar do vilarejo miserável onde mora. Entretanto, numa reviravolta do destino, ela consegue um emprego no palácio real, onde, em frente ao rei e a toda a nobreza, descobre que tem um poder misterioso… Mas como isso seria possível, se seu sangue é vermelho? Em meio às intrigas dos nobres prateados, as ações da garota vão desencadear uma dança violenta e fatal, que colocará príncipe contra príncipe - e Mare contra seu próprio coração.">
+      <img src="images/rainha_vermelha.jpg" alt="Rainha Vermelha" class="book-image">
+      <div class="availability-line green"></div>
+      <h4 class="book-title">Rainha Vermelha</h4>
+    </div>
+
+    <div class="book-card unavailable" data-summary="França: 1714. Addie LaRue não queria pertercer a ninguém ou a lugar nenhum. Em um momento de desespero, a jovem faz um pacto: a vida eterna, sob a condição de ser esquecida por quem a conhecer. Um piscar de olhos, e, como um sopro, Addie se vai. Uma virada de costas, e sua existência se dissipa na memória de todos.
+
+    Após tanto tempo vivendo uma existência deslumbrante, aproveitando a vida de todas as formas, fazendo uso de tantos artifícios quanto fosse possível e viajando pelo tempo e espaço, através dos séculos e continentes, da história e da arte, Addie entende seus limites e descobre ― apesar de fadada ao esquecimento ― até onde é capaz de ir para deixar sua marca no mundo.
+    
+    Trezentos anos depois, em uma livraria, um acontecimento inesperado: Addie LaRue esbarra com um rapaz.
+    
+    Ele enuncia cinco palavras.
+    
+    Cinco palavras capazes de colocar a vida que conhecia abaixo:
+    
+    Eu me lembro de você.">
+      <img src="images/addie_larue.jpg" alt="Livro 2" class="book-image">
+      <div class="availability-line red"></div>
+      <h4 class="book-title">A Vida Invisível de Addie Larue</h4>
+    </div>
+
+
+    <div class="book-card available" data-summary="Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas. Arrependida das escolhas que fez no passado, ela vive se perguntando o que poderia ter acontecido caso tivesse vivido de maneira diferente. Após ser demitida e seu gato ser atropelado, Nora vê pouco sentido em sua existência e decide colocar um ponto final em tudo. Porém, quando se vê na Biblioteca da Meia-Noite, Nora ganha uma oportunidade única de viver todas as vidas que poderia ter vivido.
+
+    Neste lugar entre a vida e a morte, e graças à ajuda de uma velha amiga, Nora pode, finalmente, se mudar para a Austrália, reatar relacionamentos antigos – ou começar outros –, ser uma estrela do rock, uma glaciologista, uma nadadora olímpica... enfim, as opções são infinitas. Mas será que alguma dessas outras vidas é realmente melhor do que a que ela já tem?">
+      <img src="images/biblioteca_meianoite.jpeg" alt="Livro 3" class="book-image">
+      <div class="availability-line green"></div>
+      <h4 class="book-title">A biblioteca da meia-note</h4>
+    </div>
+    <div class="book-card available" data-summary="Orgulho e Preconceito é um dos mais aclamados romances da escritora inglesa Jane Austen. Publicado em 1813, revela como era a sociedade da época, quando os relacionamentos se desenrolavam de maneira mais lenta e romântica, no ritmo das cartas levadas por mensageiros a cavalo. Nesse mundo, o sonho da Sra. Bennet era casar bem suas cinco filhas: Jane, Elizabeth, Mary, Kitty e Lydia. Entre as irmãs, destaca-se Elizabeth, a Lizzy, que se depara com um turbilhão de sentimentos diante do orgulho e preconceito que mascaram a realidade. Trata-se de um clássico que, mesmo após duzentos anos desde a sua primeira publicação, continua a encantar milhões de leitores ao redor do mundo.">
+      <img src="images/orgulho_preconceito.jpg" alt="Livro 4" class="book-image">
+      <div class="availability-line green"></div>
+      <h4 class="book-title">Orulho e Preconceito</h4>
+    </div>
+    <div class="book-card available" data-summary="Uma estonteante mistura de aventura e misticismo, ecologia e política, este romance ganhador dos prêmios Hugo e Nebula deu início a uma das mais épicas histórias de toda a ficção científica. Duna é um triunfo da imaginação, que influenciará a literatura para sempre.Esta edição inédita, com introdução de Neil Gaiman, apresenta ao leitor o universo fantástico criado por Herbert e que será adaptado ao cinema por Denis Villeneuve, diretor de A chegada e de Blade Runner 2049.">
+        <img src="images/duna.jpg" alt="Livro 5" class="book-image">
+        <div class="availability-line green"></div>
+        <h4 class="book-title">Duna</h4>
+    </div>
+    <div class="book-card available" data-summary="A trilogia Crônicas de Amor & Ódio, iniciada com The Kiss of Deception, caiu nas graças dos leitores mais apaixonados. O universo criado pela premiada escritora Mary E. Pearson encantou os brasileiros com suas disputas políticas e românticas, e as reviravoltas vividas por seus personagens tiraram o fôlego de muita gente. Os milhões de leitores pelo mundo que se sentiram órfãos ao fecharem as páginas do último livro da trilogia agora têm um motivo para comemorar: Mary E. Pearson está de volta, pronta para roubar o coração dos leitores com Dance of Thieves, o primeiro volume de Dinastia de Ladrões, a nova série ambientada no mesmo universo das Crônicas, alguns anos depois de seu desfecho. ">
+        <img src="images/dance.jpg" alt="Livro 6" class="book-image">
+        <div class="availability-line green"></div>
+        <h4 class="book-title">Dance of Thieves</h4>
+    </div>
+    <div class="book-card unavailable" data-summary="Tudo parecia perfeito, um verdadeiro conto de fadas – menos para a protagonista dessa história. Morrighan é um reino imerso em tradições, histórias e deveres, e a Primeira Filha da Casa Real, uma garota de 17 anos chamada Lia, decidiu fugir de um casamento arranjado que supostamente selaria a paz entre dois reinos através de uma aliança política. O jovem príncipe escolhido se vê então obrigado a atravessar o continente para encontrá-la a qualquer custo. Mas essa se torna também a missão de um temido assassino. Quem a encontrará primeiro?">
+        <img src="images/kiss_deception.jpg" alt="Livro 7" class="book-image">
+        <div class="availability-line red"></div>
+        <h4 class="book-title">The Kiss of Deception</h4>
+    </div>
+    <div class="book-card unavailable" data-summary="Único romance da escritora inglesa Emily Brontë, O morro dos ventos uivantes retrata uma trágica história de amor e obsessão em que os personagens principais são a obstinada e geniosa Catherine Earnshaw e seu irmão adotivo, Heathcliff. Grosseiro, humilhado e rejeitado, ele guarda apenas rancor no coração, mas tem com Catherine um relacionamento marcado por amor e ódio.">
+        <img src="images/morro_ventos.jpg" alt="Livro 8" class="book-image">
+        <div class="availability-line red"></div>
+        <h4 class="book-title">O morro dos ventos uivantes</h4>
+    </div>
+    <div class="book-card available" data-summary="Jude tinha apenas sete anos quando seus pais foram brutalmente assasinados e ela e as irmãs levadas para viver no traiçoeiro Reino das Fadas. Dez anos depois, tudo o que Jude quer é se encaixar, mesmo sendo uma garota mortal. Mas todos os feéricos parecem desprezar os humanos... Especialmente o príncipe Cardan, o mais jovem e mais perverso dos filhos do Grande Rei de Elfhame.">
+        <img src="images/principe_cruel.jpg" alt="Livro 9" class="book-image">
+        <div class="availability-line green"></div>
+        <h4 class="book-title">O principe Cruel</h4>
+    </div>
+    <div class="book-card available" data-summary="A guerra está no coração do Império Nikara, e o ópio corre em suas veias. No passado, os heróis que formaram a Trindade uniram a nação contra a poderosa Federação de Mugen, e acreditava-se que eles caminhavam entre os deuses.
+
+    Décadas depois, a paz reina, mas há boatos de que a Terceira Guerra da Papoula pode estourar a qualquer momento, e a academia militar mais prestigiada do Império prepara seus estudantes para o combate: filhos da elite e, inesperadamente, uma órfã de guerra.">
+        <img src="images/papoula.jpg" alt="Livro 10" class="book-image">
+        <div class="availability-line green"></div>
+        <h4 class="book-title">A Guerra da Papoula</h4>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="bookModal">
+    <div class="modal-content">
+      <span class="close-button" id="closeModal">&times;</span>
+      <div class="modal-body">
+        <div class="modal-image-container">
+          <img src="" alt="Imagem do Livro" id="modalBookImage" class="modal-book-image">
+          <div class="ratings">
+            <h4>Avaliações</h4>
+            <p id="modalRatings">5/5</p>
+          </div>
+        </div>
+        <div class="modal-info">
+          <h3 id="modalBookTitle">Título do Livro</h3>
+          <p id="modalBookSummary">Resumo</p>
+          <div class="availability-info">
+            <div class="availability-line" id="modalAvailabilityLine"></div>
+            <p id="modalAvailabilityText"></p>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="reserveButton" class="reserve-button">Reservar</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+        <p>&copy; 2024 Librarium. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
